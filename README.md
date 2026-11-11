@@ -123,4 +123,4 @@ BibliotecaApi/
 | 19 | Cadastrar vários materiais | IDs diferentes |
 | 20 | Excluir e cadastrar outro | ID novo não se repete |
 
-> Anexe aqui os prints dos testes feitos no Swagger.
+
