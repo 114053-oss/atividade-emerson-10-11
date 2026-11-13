@@ -1,0 +1,144 @@
+:root {
+  --tinta: #17283b;
+  --tinta-clara: #3d5168;
+  --fundo: #f5f7fa;
+  --livro: #2c5b8a;
+  --revista: #8a5a00;
+
+  --bs-primary: #2c5b8a;
+  --bs-primary-rgb: 44, 91, 138;
+  --bs-link-color: #2c5b8a;
+}
+
+body {
+  background: var(--fundo);
+  color: var(--tinta);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main { flex: 1; }
+
+.btn-primary {
+  --bs-btn-bg: var(--livro);
+  --bs-btn-border-color: var(--livro);
+  --bs-btn-hover-bg: #234a70;
+  --bs-btn-hover-border-color: #234a70;
+  --bs-btn-active-bg: #1d3e5e;
+  --bs-btn-active-border-color: #1d3e5e;
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--livro);
+  --bs-btn-border-color: var(--livro);
+  --bs-btn-hover-bg: var(--livro);
+  --bs-btn-hover-border-color: var(--livro);
+  --bs-btn-active-bg: var(--livro);
+  --bs-btn-active-border-color: var(--livro);
+}
+
+
+.topo {
+  background: var(--tinta);
+  color: #fff;
+}
+.topo h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.01em;
+}
+.topo-sub { color: #c5d2e0; }
+
+.rodape {
+  background: #e6ebf1;
+  color: var(--tinta-clara);
+  font-size: 0.875rem;
+}
+
+
+.resumo-item {
+  background: #fff;
+  border: 1px solid #dde3ea;
+  border-left: 5px solid var(--tinta);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.resumo-livro { border-left-color: var(--livro); }
+.resumo-revista { border-left-color: var(--revista); }
+.resumo-numero {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+.resumo-rotulo { color: var(--tinta-clara); font-size: 0.9rem; }
+
+
+.material-card {
+  background: #fff;
+  border: 1px solid #dde3ea;
+  border-left: 5px solid var(--livro);
+  border-radius: 0.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.material-card.revista { border-left-color: var(--revista); }
+.material-card .card-body { flex: 1; }
+.material-titulo {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  overflow-wrap: anywhere;
+}
+.badge-livro, .badge-revista { color: #fff; font-weight: 600; }
+.badge-livro { background: var(--livro); }
+.badge-revista { background: var(--revista); }
+.material-dados { margin: 0; font-size: 0.95rem; color: var(--tinta-clara); }
+.material-dados dt { font-weight: 600; color: var(--tinta); }
+.material-dados dd { margin-bottom: 0.25rem; overflow-wrap: anywhere; }
+.material-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.75rem 1rem 1rem;
+}
+
+
+.estado-lista:empty { display: none; }
+.estado-lista {
+  background: #fff;
+  border: 1px dashed #b8c4d1;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.estado-lista.erro {
+  border-color: #b02a37;
+  color: #842029;
+  background: #fdf1f2;
+}
+
+.painel-form {
+  background: #fff;
+  border: 1px solid #dde3ea;
+  border-top: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 1.5rem;
+}
+.nav-tabs .nav-link { color: var(--tinta-clara); }
+.nav-tabs .nav-link.active { color: var(--tinta); font-weight: 600; }
+
+.mensagens {
+  position: fixed;
+  top: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92vw, 560px);
+  z-index: 2000;
+}
+.mensagens .alert { box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15); }
+
+.info-lista dt { font-weight: 600; }
+.info-lista dd { overflow-wrap: anywhere; }
