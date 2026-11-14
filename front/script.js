@@ -1,5 +1,4 @@
-// Troque a porta pela que aparece no Swagger da sua API
-const API_URL = "https://localhost:5000/api/Materiais";
+const API_URL = "http://localhost:5000/api/Materiais";
 
 const MESES = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
   "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
